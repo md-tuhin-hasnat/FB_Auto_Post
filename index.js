@@ -53,6 +53,6 @@ async function doIt() {
     })
 }
 // doIt()
-cron.schedule('0 0 12 * * *', () => {
+cron.schedule('0 30 13 * * *', () => {
     doIt()
 });
