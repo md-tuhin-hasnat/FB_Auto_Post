@@ -38,8 +38,8 @@ async function doIt() {
       result.forEach(element => {
           if(element.phase === 'BEFORE'){
             //console.log(element.name);
-             let timeStamp = element.startTimeSeconds*1000;
-            // let timeStamp = Date.now();
+             //let timeStamp = element.startTimeSeconds*1000;
+             let timeStamp = Date.now();
             let time = new Date(timeStamp);
             let timeNow = Date.now();
             timeNow = new Date(timeNow);
@@ -53,6 +53,6 @@ async function doIt() {
     })
 }
 // doIt()
-cron.schedule('0 30 13 * * *', () => {
+cron.schedule('10 * * * * *', () => {
     doIt()
 });
