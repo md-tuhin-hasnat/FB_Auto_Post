@@ -1,0 +1,15 @@
+{
+  "name": "auto_fb_post",
+  "version": "1.0.0",
+  "description": "A simple integration of codeforces and facebook api to post automatically on facebook group about upcoming contest",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "MD Tuhin Hasnat",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "node-cron": "^3.0.2"
+  }
+}
